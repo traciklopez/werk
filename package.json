@@ -4,9 +4,12 @@
   "description": "TLopez 1st mean project",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
-    "mongoose": "^4.1.11"
+    "mongoose": "^4.1.11",
+    "passport": "^0.3.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
