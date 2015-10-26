@@ -1,6 +1,7 @@
 var config = require('./config'),
 	bodyParser = require('body-parser'),
 	express = require('express'),
+	passport = require('passport'),
 	flash = require('connect-flash'),
 	session = require('express-session');
 
@@ -26,6 +27,8 @@ module.exports = function() {
 
     require('../app/routes/index.server.routes.js')(app);
     require('../app/routes/users.server.routes.js')(app);
+    require('../app/routes/todos.server.routes.js')(app);
+    
 
 
     app.use(express.static('./public'));

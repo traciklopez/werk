@@ -1,6 +1,7 @@
 var passport = require('passport'),
     mongoose = require('mongoose');
 
+
 module.exports = function() {
     var User = mongoose.model('User');
 
@@ -19,4 +20,5 @@ module.exports = function() {
     });
 
     require('./strategies/local.js')();
+    require('./strategies/facebook.js')();
 };
